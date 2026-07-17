@@ -13,6 +13,16 @@ const images = [
     src: "galleries/kitchen.jpg",
     caption: "🍽 Kitchen & Dining Area",
     position: "center"
+  },
+  {
+    src: "galleries/bedroom.jpg",
+    caption: "🛏 Bedroom",
+    position: "center"
+  },
+  {
+    src: "galleries/living-room.jpg",
+    caption: "🛋 Living Room",
+    position: "center"
   }
 ];
 
