@@ -20,17 +20,31 @@ body {
   padding: 20px 0 10px;
 }
 
-/* Individual cards */
+/* Default card style */
 .swiper-slide {
-  width: 78vw;
-  max-width: 320px;
-  aspect-ratio: 3 / 4;
+  width: 85vw;
+  max-width: 360px;
+  aspect-ratio: 4 / 3;
   position: relative;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(0,0,0,0.15);
   background: #eee;
   transition: transform 0.3s ease;
+}
+
+/* Portrait card style (selfies/family photos) */
+.swiper-slide.portrait {
+  width: 78vw;
+  max-width: 320px;
+  aspect-ratio: 3 / 4;
+}
+
+/* Landscape card style (house/places/photos of scenery) */
+.swiper-slide.landscape {
+  width: 85vw;
+  max-width: 360px;
+  aspect-ratio: 4 / 3;
 }
 
 /* Image */
@@ -47,12 +61,10 @@ body {
   left: 0;
   width: 100%;
   padding: 45px 18px 18px;
-
   background: linear-gradient(
     transparent,
     rgba(0,0,0,0.65)
   );
-
   color: white;
   font-size: 17px;
 }
