@@ -53,8 +53,9 @@ const swiper = new Swiper(".swiper", {
   on: {
 
     slideChange: function () {
-      counter.textContent =
-        `${this.realIndex + 1} / ${images.length}`;
+      document.querySelectorAll(".slide-counter").forEach((badge, index) => {
+  badge.textContent = `${index + 1} / ${images.length}`;
+});
     }
 
   }
